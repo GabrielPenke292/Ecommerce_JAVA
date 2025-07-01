@@ -48,22 +48,22 @@
                     <h2 class="section-heading text-uppercase">Cadastre-se</h2>
                     <h3 class="section-subheading text-muted">Crie seu Cadastro Gratuitamente</h3>
                 </div>
-                <form>
+                <form method="post" action="cadastrar/salvaUsuario">
                     <div class="row justify-content-md-center mb-5 text-center">
                         <div class="col-md-12 align-self-center text-center">
                             <div class="form-group input-login mx-auto">
-                                <input class="form-control" id="email" type="text" placeholder="Nome *" required="required" data-validation-required-message="Please enter your email address." />
+                                <input class="form-control" id="email" name="usuario.nome" type="text" placeholder="Nome *" required="required" data-validation-required-message="Please enter your email address." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group input-login mx-auto">
-                                <input class="form-control" id="email" type="email" placeholder="Email *" required="required" data-validation-required-message="Please enter your email address." />
+                                <input class="form-control" id="email" name="usuario.email" type="email" placeholder="Email *" required="required" data-validation-required-message="Please enter your email address." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group input-login mx-auto">
-                                <input class="form-control" id="phone" type="password" placeholder="Senha *" required="required" data-validation-required-message="Insira sua senha." />
+                                <input class="form-control" id="phone" name="usuario.senha" type="password" placeholder="Senha *" required="required" data-validation-required-message="Insira sua senha." />
                                 <p class="help-block text-danger"></p>
                             </div>
-                            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#cadastrar">Cadastrar</a>
+                            <button type="submit" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#cadastrar">Cadastrar</button>
                         </div> 
                     </div>
                     
